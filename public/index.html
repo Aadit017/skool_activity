@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Password</title>
+</head>
+<body>
+    <div class="all">
+          
+        <h2>Challenge!</h2>
+        
+        
+        <p>Find The Password</p>
+        
+        <input id="numb">
+        
+        <button type="button" class="btn" onclick="myFunction()">Submit</button>
+        <style>
+            .btn{ 
+                width:auto;
+            }
+            </style>
+        <p id="demo"></p>
+        <style>
+            .all{ 
+                
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);    
+            }
+            </style>
+       <!-- 
+           
+        -->
+       <script>
+           function myFunction() {
+               let x = document.getElementById("numb").value;
+               let text;
+               let word="adfekhjrgrgwe"
+               if (x==word){
+                   text = `${x} <-- Is Correct , open a ticket in the discord server and submit it`;
+                } else {
+                    text = "Incorrect,try again";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+            </script>
+      <Find class="hed3">Find your next hint in the source code of the website</h3>   
+    <style>
+        .hed3{ 
+            color:white;
+        }
+    </style>
+    </div>
+</body>
+</html>
